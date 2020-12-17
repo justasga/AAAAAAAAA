@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/look.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <div class="video-container">
+            <video src="VYDEO.mp4" autoplay muted loop></video>
+        </div>
+
+        
+
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">XXXXX</a></li>
+        </ul>
+
+    
+            <div class="right">
+                <img src="play1.png" id="icon">
+        
+            </div>
+        
+
+    </section>
+
+    <audio id="song">
+        <source src="Gedi Bright - WOKE (lo-fi beat).mp3" type="audio/mp3">
+   
+   
+        </audio>
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (song.paused)  {
+                song.play ();
+                icon.src = "pause.png";
+            }  else {
+                song.pause();
+                icon.src = "play1.png";
+            }
+        }
+        
+    </script>
+
+    
+
+    
+    
+</body>
+</html>
